@@ -1,4 +1,4 @@
-def accumulate(numbers: list[int]) -> int:
+def sum_all(numbers: list[int]) -> int:
     result = 0
 
     for n in numbers:
@@ -9,4 +9,4 @@ def accumulate(numbers: list[int]) -> int:
 if __name__ == '__main__':
     import sys
     numbers = [int(arg) for arg in sys.argv[1:]]
-    print(accumulate(numbers))
+    print(sum_all(numbers))
