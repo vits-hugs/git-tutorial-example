@@ -1,8 +1,9 @@
 from functools import reduce
+from operator import mul
 
 
 def multiply_all(numbers: list[int]) -> int:
-    return reduce(lambda a, b: a*b, numbers, 1)
+    return reduce(mul, numbers, 1)
 
 if __name__ == '__main__':
     import sys
