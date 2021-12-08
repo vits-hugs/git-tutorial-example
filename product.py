@@ -1,4 +1,4 @@
-def multiply(numbers: list[int]) -> int:
+def multiply_all(numbers: list[int]) -> int:
     result = 1
 
     for n in numbers:
@@ -9,4 +9,4 @@ def multiply(numbers: list[int]) -> int:
 if __name__ == '__main__':
     import sys
     numbers = [int(arg) for arg in sys.argv[1:]]
-    print(multiply(numbers))
+    print(multiply_all(numbers))
