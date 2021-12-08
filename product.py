@@ -1,10 +1,8 @@
+from functools import reduce
+
+
 def multiply_all(numbers: list[int]) -> int:
-    result = 1
-
-    for n in numbers:
-        result *= n
-
-    return result
+    return reduce(lambda a, b: a*b, numbers, 1)
 
 if __name__ == '__main__':
     import sys
